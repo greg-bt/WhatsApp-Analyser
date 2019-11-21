@@ -11,7 +11,7 @@ My goal for this project was to create a good looking and very user friendly Wha
 While developing this tool I realised that while it ran just fine on my desktop, my phone had a much harder time keeping up with all of the massive client-side processing. After some careful optimisation I was able to bring the performance to a similar level on pc as on mobile.
 
 ## TODO
-Add support for iOS exported chats.
-Drop canvasjs for graph.
-Optimise for mobile.
-CSS for mobile.
+* Add support for iOS exported chats.
+* Drop canvasjs for graph.
+* Optimise for mobile.
+* CSS for mobile.
