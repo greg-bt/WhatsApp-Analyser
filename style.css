@@ -168,4 +168,5 @@ span { font-weight: bold; font-size: 40px; }
     }
     #content { width: auto; }
     .table {padding: 0;width:98%}
+	br{display:none}
 }
