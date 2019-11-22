@@ -82,10 +82,10 @@ span { font-weight: bold; font-size: 40px; }
     text-align: center;
 }
 
-#content { top: 45%;height: 600px; width: 320px; text-align: center;}
+#content { top: 420px; height: 600px; width: 320px; text-align: center; }
 
 #chartContainer span{ font-size: 14px; }
-#msgGraph { width: 98%;}
+#msgGraph { width: 98%; }
 
 
 
@@ -131,7 +131,7 @@ span { font-weight: bold; font-size: 40px; }
     background-color: #DAAD86;
     padding: 2px;
     border: 3px solid #DAAD86;
-    border-radius: 8px;
+    border-radius: 15px;
     border-right: 6px solid #BC986A;
 }
 
