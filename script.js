@@ -301,5 +301,6 @@ function switchDiv(div) {
 	}
 	
 	document.getElementById(div).style.visibility = "visible";
-
+	window.scrollTo(0, 0);
+	
 }
