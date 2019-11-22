@@ -1,5 +1,3 @@
-/* TODO list
-*/
 // JavaScript source code written by su-greg [github]. Please don't steal or redistribute! 
 
 // Listen for the txt being submited
