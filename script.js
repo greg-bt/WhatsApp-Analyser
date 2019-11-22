@@ -65,8 +65,6 @@ function placeFileContent(target, file) {
 		for (i = 0; dates.length > i; i++) {
 			frequency[i] = 0;
 		}
-		console.log(frequency);
-		console.log(dates);
 
         chat.forEach(message => {
 			// For valid messages
@@ -105,10 +103,6 @@ function placeFileContent(target, file) {
 				content.split(": ")[1].split(" ").forEach(word => {
                     characters += word.length;
                 });
-
-			// can remove at some point ( Catches bad messages )
-			} else {
-				console.log(message);
 			}
 		});
 
@@ -193,9 +187,9 @@ function placeFileContent(target, file) {
 		// Create graph for messages per user
 		var partyTable = "<a>Messages</a><div class='table'>";
 		for (party in parties) { partyTable += `
-			<div title="${parties[party][0]}" style="width:${Math.round(parties[party][0]/topMessager[1]*100)-2}%;" class="bar">
+			<div title="${parties[party][0]}" style="width:${Math.round(parties[party][0]/topMessager[1]*100)-5}%;" class="bar">
 				<p>${ party }
-					<span style="float: right;">${parties[party][0]} </span>
+					<span style="float: right;text-align: center;">${parties[party][0]} </span>
 				</p>
 			</div>`}
 		document.getElementById("partyStats").innerHTML = `${partyTable}</div><pre onclick="switchDiv('statsGrid')" style="cursor: pointer;text-align: right;">Back</pre>`;
@@ -203,7 +197,7 @@ function placeFileContent(target, file) {
 		// Create graph for words per user
 		var partyTable = "<a>Words per message</a><div class='table'>";
 		for (party in parties) { partyTable += `
-			<div title="${(parties[party][1]/parties[party][0]).toFixed(1)}" style="width:${Math.round((parties[party][1]/parties[party][0])/topLinguist[1]*100)-2}%;" class="bar">
+			<div title="${(parties[party][1]/parties[party][0]).toFixed(1)}" style="width:${Math.round((parties[party][1]/parties[party][0])/topLinguist[1]*100)-5}%;" class="bar">
 				<p>${ party }
 					<span style="float: right;">${(parties[party][1]/parties[party][0]).toFixed(1)} </span>
 				</p>
@@ -213,7 +207,7 @@ function placeFileContent(target, file) {
 		// Create graph for message means
 		var partyTable = "<a>Adv daily messages</a><div class='table'>";
 		for (i=0; i < 4; i++) { partyTable += `
-			<div title="${means[i]}" style="width:${Math.round(means[i]/topMean*100)-2}%;" class="bar">
+			<div title="${means[i]}" style="width:${Math.round(means[i]/topMean*100)-5}%;" class="bar">
 				<p>${ meanRanges[i] }
 					<span style="float: right;">${means[i]} </span>
 				</p>
@@ -302,5 +296,5 @@ function switchDiv(div) {
 	
 	document.getElementById(div).style.visibility = "visible";
 	window.scrollTo(0, 0);
-	
+
 }
