@@ -1,17 +1,15 @@
 label {
+    display:inline-block;
     width: 150px;
     height: 150px;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     background: rgb(188,152,106);
-    background: linear-gradient(0deg, rgba(188,152,106,1) 0%, rgba(212,169,129,1) 81%, rgba(218,173,134,1) 100%); 
+    background: linear-gradient(0deg, rgba(188,152,106,1) 0%, rgba(212,169,129,1) 81%, rgba(218,173,134,1) 100%);
     opacity: 0.9;
     text-align: center;
     cursor: pointer;
     font-weight: 700;
-	border-radius: 150px;
-	border: 10px solid rgba(212,169,129,1);
+    border-radius: 150px;
+    border: 10px solid rgba(212,169,129,1);
 }
 
 body {
@@ -37,10 +35,8 @@ button {
 }
 
 i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -28px 0 0 -30px; 
+    display: inline;
+    margin: 42px 0 0 0; 
     font-size:48px;
 }
 
@@ -144,7 +140,6 @@ span { font-weight: bold; font-size: 40px; }
 	height: 0.1px;
 	opacity: 0;
 	overflow: hidden;
-	position: absolute;
 	z-index: -1;
 }
 
